@@ -111,7 +111,8 @@ export const login = catchAsyncErrors(async (req, res, next) => {
       .cookie("token", "", {
         httpOnly: true,
         expires: new Date(Date.now() + 1000), // expires in 1 second
-        sameSite: "Strict", // optional, for security
+        sameSite: "None", // optional, for security
+        secure: true, // true if your site is served over HTTPS
       })
       .json({
         success: true,
