@@ -7,7 +7,7 @@ const MyApps = () => {
   useEffect(() => {
     const getMyApps = async () => {
       const { data } = await axios.get(
-        "http://localhost:5000/api/v1/softwareapplication/getall",
+        "https://my-mern-portfolio-ft2s.onrender.com/api/v1/softwareapplication/getall",
         { withCredentials: true }
       );
       setApps(data.softwareApplications);

@@ -20,7 +20,7 @@ const Hero = () => {
     const getMyProfile = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/v1/user/me",
+          "https://my-mern-portfolio-ft2s.onrender.com/api/v1/user/portfolio/me",
           { withCredentials: true }
         );
         setUser(data.user);
