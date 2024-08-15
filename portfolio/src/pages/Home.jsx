@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Hero from "./miniComponents/Hero";
 import Timeline from "./miniComponents/Timeline";
